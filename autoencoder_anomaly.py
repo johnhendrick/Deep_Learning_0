@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 
 # staging training data
 
-df = pd.read_csv('/home/jh/Documents/DL_0/empowerlog_1mv3.csv')
+df = pd.read_csv('/home/johnh/Documents/Deep_Learning_0/OneCDS_W_DUN_PANADOLEXTRA_19JUL12_000_1M.csv')
 # remove sign off reasons
 df['Activity'] = df['Activity'].str.extract(r'(.{0,17})')
 df.sort_values(['CASE_ID', 'Timestamp'], inplace=True, ignore_index=True)
